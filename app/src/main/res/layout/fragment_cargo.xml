@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentCargo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CargoFragment">
+
+    <TextView
+        android:id="@+id/tvTituloCargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cargo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etCodigoCargo"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="38dp"
+        android:ems="10"
+        android:hint="@string/codigo"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btnBuscarCargo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloCargo" />
+
+    <EditText
+        android:id="@+id/etNomeCargo"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="34dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCodigoCargo" />
+
+    <Button
+        android:id="@+id/btnBuscarCargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="34dp"
+        android:text="@string/buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etCodigoCargo"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloCargo" />
+
+    <Button
+        android:id="@+id/btnInserirCargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/inserir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeCargo" />
+
+    <Button
+        android:id="@+id/btnExcluirCargo"
+        android:layout_width="91dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/excluir"
+        app:layout_constraintStart_toStartOf="@+id/btnInserirCargo"
+        app:layout_constraintTop_toBottomOf="@+id/btnInserirCargo" />
+
+    <Button
+        android:id="@+id/btnModificarCargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/modificar"
+        app:layout_constraintEnd_toEndOf="@+id/etNomeCargo"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeCargo" />
+
+    <Button
+        android:id="@+id/btnListarCargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/listar"
+        app:layout_constraintEnd_toEndOf="@+id/btnModificarCargo"
+        app:layout_constraintTop_toBottomOf="@+id/btnModificarCargo" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="292dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvListarCargo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical|horizontal" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

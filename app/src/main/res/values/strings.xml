@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Cadastro de Funcionários</string>
+    <string name="codigo">Código</string>
+    <string name="nome">Nome</string>
+    <string name="documento">CPF ou CNPJ (Sem Pontos ou Traços)</string>
+    <string name="cargo">Cargo</string>
+    <string name="salario">Salário</string>
+    <string name="funcionario">Funcionario</string>
+    <string name="inserir">Inserir</string>
+    <string name="modificar">Modificar</string>
+    <string name="excluir">Excluir</string>
+    <string name="buscar">Buscar</string>
+    <string name="listar">Listar</string>
+    <string name="inicio">App do RH</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
